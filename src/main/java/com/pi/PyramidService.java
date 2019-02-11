@@ -60,10 +60,19 @@ public class PyramidService {
             }
         }
         BinaryTree tree = new BinaryTree();
-        tree.printPaths(numbers.get(0));
-        for (int i = 0; i < tree.sums.size(); i++) {
-            if (tree.sums.get(i) > max) {
-                max = tree.sums.get(i);
+        tree.printPaths(numbers.get(0), pyramid.getCapacity());
+        if (tree.sums2.isEmpty()) {
+            for (int i = 0; i < tree.sums.size(); i++) {
+                if (tree.sums.get(i) > max) {
+                    max = tree.sums.get(i);
+                }
+            }
+        } else {
+            for (int i = 0; i < tree.sums2.size(); i++) {
+                if (tree.sums2.get(i) > max) {
+                    max = tree.sums2.get(i);
+                    System.out.println(tree.sums2.get(i));
+                }
             }
         }
         System.out.println("max toplam: " + max);
