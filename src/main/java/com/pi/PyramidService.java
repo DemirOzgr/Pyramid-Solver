@@ -50,9 +50,6 @@ public class PyramidService {
             }
             if (numbers.get(i).getX() > 0 && numbers.get(i).getY() > 0) {
                 for (int k = 0; k < numbers.size(); k++) {
-                    if (adjacent.get(k).getX() == numbers.get(i).getX() + 1 && adjacent.get(k).getY() == numbers.get(i).getY() - 1) {
-                        numbers.get(i).addAdjacents(adjacent.get(k));
-                    }
                     if (adjacent.get(k).getX() == numbers.get(i).getX() + 1 && adjacent.get(k).getY() == numbers.get(i).getY()) {
                         numbers.get(i).addAdjacents(adjacent.get(k));
                     }

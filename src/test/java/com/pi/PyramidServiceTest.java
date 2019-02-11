@@ -39,27 +39,12 @@ public class PyramidServiceTest {
     // Constants.DEFAULT_PYRAMID kısmında, test etmek istediğimiz piramiti seçmeliyiz.
     // assertEquals(8823, sum) kısmında, sayı değerinin yerine test ettiğimiz piramitin cevabını yazmalıyız.
     public void should_returns_24() {
-        String matrix = Constants.SAMPLE_PYRAMID;
+        String matrix = Constants.DEFAULT_PYRAMID;
         Pyramid pyramid = new Pyramid(matrix);
         int sum = pyramidService.maxSumOfNumber(pyramid);
         assertEquals(24, sum);
     }
 
-    @Test
-    // Asal olan bir sayi için asallık testimizi yapıyoruz.
-    public void should_return_true() {
-        BinaryTree res = new BinaryTree();
-        boolean result = res.isNumberPrimeNumber(3);
-        assertTrue(result);
-
-    }
-
-    @Test
-    // Asal olmayan bir sayı için asallık testimizi yapıyoruz.
-    public void should_return_false() {
-        BinaryTree res = new BinaryTree();
-        boolean result = res.isNumberPrimeNumber(6);
-        assertFalse(result);
-    }
+  
 
 }
