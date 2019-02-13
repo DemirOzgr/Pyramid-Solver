@@ -7,7 +7,7 @@ package com.pi;
 public class Constants {
 
     // UYGULAMA İÇİN P.I WORKS TARAFINDAN VERİLEN ÖRNEK-1
-    // CEVAP : 8823
+    // CEVAP : 8186
     public static final String DEFAULT_PYRAMID
             = "215\n"
             + "193 124\n"
